@@ -35,8 +35,13 @@ function findElement(arr, value) {
  *    2 => [ 1, 3 ]
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
-function generateOdds(/* len */) {
-  throw new Error('Not implemented');
+function generateOdds(len) {
+  const x = [];
+  // eslint-disable-next-line space-before-blocks
+  for (let i = 0; i <= (len * 2); i += 1){
+    if (i % 2 !== 0) x.push(i);
+  }
+  return x;
 }
 
 
